@@ -25,10 +25,7 @@
     <div class="container">
 		  <div class="row-fluid">
 			<div class="col-md-12">
-			<h2><span class="glyphicon glyphicon-edit"></span> Nueva Cotización</h2>
-			<hr>
-			<div class="col-md-12">
-			<form class="form-horizontal" role="form" id="datos_cotizacion">
+			<form class="form-horizontal" role="form">
 				<h2>Ingresar</h2>
 				<div>
 				<a href="login.html" style="float:right">Iniciar sesion</a>
@@ -39,6 +36,11 @@
 				<br>
 				</form>	
 			</div>
+			  
+			<div class="col-md-12">
+			<h2><span class="glyphicon glyphicon-edit"></span> Nueva Cotización</h2>
+			<hr>
+			
 			<form class="form-horizontal" role="form" id="datos_cotizacion">
 				<div class="form-group row">
 				  <label for="atencion" class="col-md-1 control-label">Atención:</label>
