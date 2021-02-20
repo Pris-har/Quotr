@@ -26,13 +26,13 @@
 		  <div class="row-fluid">
 			<div class="col-md-12">
 			<form class="form-horizontal" role="form">
-				<h2>Ingresar</h2>
+				<h3>Ingresar</h3>
 				<div>
-				<a href="login.html" style="float:left">Iniciar sesion</a>
+				<a href="signup.html" style="float:left">Registrarse</a>
 				</div>
 				<br>
 				<div>
-				<a href="signup.html" style="float:left">Registrarse</a>
+				<a href="login.html" style="float:left">Iniciar sesion</a>
 				</div>
 				</form>	
 			</div>
