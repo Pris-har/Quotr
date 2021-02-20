@@ -27,12 +27,12 @@
 			<div class="col-md-12">
 			<form class="form-horizontal" role="form">
 				<h2>Ingresar</h2>
+				<div>
+				<a href="login.html" style="float:left">Iniciar sesion</a>
+				</div>
 				<br>
 				<div>
-				<a href="login.html" style="float:right">Iniciar sesion</a>
-				</div>
-				<div>
-				<a href="signup.html" style="float:right">Registrarse</a>
+				<a href="signup.html" style="float:left">Registrarse</a>
 				</div>
 				</form>	
 			</div>
