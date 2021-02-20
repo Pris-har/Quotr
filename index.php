@@ -27,6 +27,18 @@
 			<div class="col-md-12">
 			<h2><span class="glyphicon glyphicon-edit"></span> Nueva Cotización</h2>
 			<hr>
+			<div class="col-md-12">
+			<form class="form-horizontal" role="form" id="datos_cotizacion">
+				<h2>Ingresar</h2>
+				<div>
+				<a href="login.html" style="float:right">Iniciar sesion</a>
+				</div>
+				<div>
+				<a href="signup.html" style="float:right">Registrarse</a>
+				</div>
+				<br>
+				</form>	
+			</div>
 			<form class="form-horizontal" role="form" id="datos_cotizacion">
 				<div class="form-group row">
 				  <label for="atencion" class="col-md-1 control-label">Atención:</label>
