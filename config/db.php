@@ -1,7 +1,8 @@
-﻿<?php
-	define("DB_HOST", "localhost");//DB_HOST:  generalmente suele ser "127.0.0.1"
-define("DB_NAME", "cotizador_bs3");//Nombre de la base de datos
-define("DB_USER", "root");//Usuario de tu base de datos
-define("DB_PASS", "");//Contraseña del usuario de la base de datos
+<?php
+//conexion remota
+define("DB_HOST", "remotemysql.com");
+define("DB_NAME", "Pua9qGgCRT");
+define("DB_USER", "remotemysql.com");
+define("DB_PASS", "WxdZ2hLjfr");
  
 ?>
