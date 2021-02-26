@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 session_start();
 $session_id= session_id();
 if (isset($_POST['id'])){$id=$_POST['id'];}
@@ -30,7 +30,7 @@ $delete=mysqli_query($con, "DELETE FROM tmp_cotizacion WHERE id_tmp='".mysqli_es
 </tr>
 <?php
 	$sumador_total=0;
-	$sql=mysqli_query($con, "select * from productos_demo, tmp_cotizacion where productos_demo.id_producto=tmp_cotizacion.id_producto and tmp_cotizacion.session_id='".$session_id."'");
+	$sql=mysqli_query($con, "select * from productos, tmp_cotizacion where productos.id_producto=tmp_cotizacion.id_producto and tmp_cotizacion.session_id='".$session_id."'");
 	while ($row=mysqli_fetch_array($sql))
 	{
 	$id_tmp=$row["id_tmp"];
@@ -40,7 +40,7 @@ $delete=mysqli_query($con, "DELETE FROM tmp_cotizacion WHERE id_tmp='".mysqli_es
 	$id_marca_producto=$row['id_marca_producto'];
 	if (!empty($id_marca_producto))
 	{
-	$sql_marca=mysqli_query($con, "select nombre_marca from marcas_demo where id_marca='$id_marca_producto'");
+	$sql_marca=mysqli_query($con, "select nombre_marca from marcas where id_marca='$id_marca_producto'");
 	$rw_marca=mysqli_fetch_array($sql_marca);
 	$nombre_marca=$rw_marca['nombre_marca'];
 	$marca_producto=" ".strtoupper($nombre_marca);
