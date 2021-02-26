@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 
 	/* Connect To Database*/
 	require_once ("../config/db.php");//Contiene las variables de configuracion para conectar a la base de datos
@@ -9,7 +9,7 @@
 		// escaping, additionally removing everything that could be (html/javascript-) code
          $q = mysqli_real_escape_string($con,(strip_tags($_REQUEST['q'], ENT_QUOTES)));
 		 $aColumns = array('codigo_producto', 'nombre_producto');//Columnas de busqueda
-		 $sTable = "productos_demo";
+		 $sTable = "productos";
 		 $sWhere = "";
 		if ( $_GET['q'] != "" )
 		{
@@ -57,7 +57,7 @@
 					$nombre_producto=$row['nombre_producto'];
 					$id_marca_producto=$row['id_marca_producto'];
 					$codigo_producto=$row["codigo_producto"];
-					$sql_marca=mysqli_query($con, "select nombre_marca from marcas_demo where id_marca='$id_marca_producto'");
+					$sql_marca=mysqli_query($con, "select nombre_marca from marcas where id_marca='$id_marca_producto'");
 					$rw_marca=mysqli_fetch_array($sql_marca);
 					$nombre_marca=$rw_marca['nombre_marca'];
 					$precio_venta=$row["precio_producto"];
