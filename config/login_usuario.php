@@ -22,11 +22,11 @@
 		echo '
 			<script>
 				alert("Usuario no existe, por favor verifique los datos introducidos");
-				windows.location = "../index.php";
+				window.location = "../index.php";
 			</script>
 		
 		';
-		
+		exit();
 		
 	}
 	
