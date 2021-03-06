@@ -15,7 +15,7 @@
 	if(mysqli_num_rows($validar_login) > 0){
 		$_SESSION['usuario'] = $correo;
 		header("location: ../cotizador.php");
-		exit;
+		exit();
 	}else{
 		echo '
 			<script>
@@ -24,7 +24,7 @@
 			</script>
 		
 		';
-		exit;
+		exit();
 		
 	}
 	
