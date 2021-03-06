@@ -11,8 +11,7 @@
 	//CIFRAR CONTRASEÑA
 	$contrasena = hash('sha512', $contrasena);
 	
-	$query = "INSERT INTO usuario(nombre, apellido, empresa, correo, contrasena) 
-			  VALUES('$nombre', '$apellido', '$empresa', '$correo', '$contrasena')";
+	$query = "INSERT INTO usuario(nombre, apellido, empresa, correo, contrasena)VALUES('$nombre', '$apellido', '$empresa', '$correo', '$contrasena')";
 	
 	//VERIFICAR QUE EL CORREO NO SE REPITA EN LA BASE DE DATOS
 	
