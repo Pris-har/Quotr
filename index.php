@@ -42,7 +42,7 @@
 				<h2>Iniciar sesión</h2>
 				<input type="text" placeholder="Correo Electrónico" name="correo">
 				<input type="password" placeholder="Contraseña" name="contrasena">
-				<button>Entrar</button>
+				<button type="submit">Entrar</button>
 			</form>
 			
 			<form action="registro_usuario.php" method="POST" class="formulario__register">
@@ -52,7 +52,7 @@
 				<input type="text" placeholder="empresa" name="empresa">
 				<input type="text" placeholder="Correo Electrónico" name="correo">
 				<input type="password" placeholder="Contraseña" name="contrasena">
-				<button>Registrarse</button>
+				<button type="submit">Registrarse</button>
 			</form>
 		</div>
 	</div>
