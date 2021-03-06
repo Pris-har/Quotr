@@ -38,14 +38,14 @@
 		</div>
 		
 		<div class="contenedor__login-register">
-			<form action="login_usuario.php" method="POST" class="formulario__login">
+			<form action="config/login_usuario.php" method="POST" class="formulario__login">
 				<h2>Iniciar sesión</h2>
 				<input type="text" placeholder="Correo Electrónico" name="correo">
 				<input type="password" placeholder="Contraseña" name="contrasena">
 				<button>Entrar</button>
 			</form>
 			
-			<form action="registro_usuario.php" method="POST" class="formulario__register">
+			<form action="config/registro_usuario.php" method="POST" class="formulario__register">
 				<h2>Registrarse</h2>
 				<input type="text" placeholder="Nombre(s)" name="nombres">
 				<input type="text" placeholder="Apellido(s)" name="apellidos">
