@@ -24,7 +24,7 @@
   <body>
 	<main>
 	<div class="contenedor__todo">
-		<div class="caja_trasera">
+		<div class="caja__trasera">
 			<div class="caja_trasera-login">
 				<h3>¿Ya tienes cuenta?</h3>
 				<p>Inicia sesión para entrar en la página</p>
