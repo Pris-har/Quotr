@@ -45,7 +45,7 @@
 				<!--//</div>-->
 				<!--//<br>-->
 				<div>
-				<a href="cerrar_sesion.php" style="float:left">Cerrar sesion</a>
+				<a href="cerrar_sesion.php" style="float:right">Cerrar sesión</a>
 				</div>
 				</form>	
 			</div>
