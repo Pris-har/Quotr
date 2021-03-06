@@ -47,11 +47,11 @@
 			
 			<form action="config/registro_usuario.php" method="POST" class="formulario__register">
 				<h2>Registrarse</h2>
-				<input type="text" placeholder="Nombre(s)" name="nombres" required>
-				<input type="text" placeholder="Apellido(s)" name="apellidos" required>
-				<input type="text" placeholder="Empresa" name="empresa" required>
-				<input type="text" placeholder="Correo Electrónico" name="correo" required>
-				<input type="password" placeholder="Contraseña" name="contrasena" required>
+				<input type="text" placeholder="*Nombre(s)" name="nombres" required>
+				<input type="text" placeholder="*Apellido(s)" name="apellidos" required>
+				<input type="text" placeholder="*Empresa" name="empresa" required>
+				<input type="text" placeholder="*Correo Electrónico" name="correo" required>
+				<input type="password" placeholder="*Contraseña" name="contrasena" required>
 				<button>Registrarse</button>
 			</form>
 		</div>
