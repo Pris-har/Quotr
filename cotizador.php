@@ -39,11 +39,11 @@
 		  <div class="row-fluid">
 			<div class="col-md-12">
 			<form class="form-horizontal" role="form">
-				//<h3>Ingresar</h3>
-				//<div>
-				//<a href="signup.html" style="float:left">Registrarse</a>
-				//</div>
-				//<br>
+				<!--<h3>Ingresar</h3>-->
+				<!--<h3>//<div>-->
+				<!--//<a href="signup.html" style="float:left">Registrarse</a>-->
+				<!--//</div>-->
+				<!--//<br>-->
 				<div>
 				<a href="cerrar_sesion.php" style="float:left">Cerrar sesion</a>
 				</div>
