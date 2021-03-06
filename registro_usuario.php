@@ -16,7 +16,7 @@
 	
 	//VERIFICAR QUE EL CORREO NO SE REPITA EN LA BASE DE DATOS
 	
-	$verificar_correo = mysqli_query($conexion, "SELECT * FROM usuario WHERE correo='$correo' ");
+	$verificar_correo = mysqli_query($con, "SELECT * FROM usuario WHERE correo='$correo' ");
 	
 	if(mysqli_num_rows($verificar_correo) > 0){
 		echo '
@@ -28,7 +28,7 @@
 		exit();
 	}
 	
-	$ejecutar = mysqli_query($conexion, $query);
+	$ejecutar = mysqli_query($con, $query);
 	
 	if($ejecutar){
 		echo '
@@ -46,5 +46,5 @@
 		';
 	}
 	
-	mysqli_close($conexion);
+	mysqli_close($con);
 ?>
