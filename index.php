@@ -25,12 +25,12 @@
 	<main>
 	<div class="contenedor__todo">
 		<div class="caja__trasera">
-			<div class="caja_trasera-login">
+			<div class="caja__trasera-login">
 				<h3>¿Ya tienes cuenta?</h3>
 				<p>Inicia sesión para entrar en la página</p>
 				<button id="btn__iniciar-sesion">Iniciar sesión</button>
 			</div>
-			<div class="caja_trasera-register">
+			<div class="caja__trasera-register">
 				<h3>¿Aún no tienes cuenta?</h3>
 				<p>Regístrate para que puedas iniciar sesión</p>
 				<button id="btn__registrarse">Regístrarse</button>
