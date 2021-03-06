@@ -125,7 +125,7 @@ main{
 }
 
 /*DISEÑO RESPONSIVO*/
-@media screen and (max-width_ 850px){
+@media screen and (max-width: 850px){
 	
 	main{
 		margin-top: 50px;
