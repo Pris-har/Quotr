@@ -43,7 +43,7 @@
 				<!--<h3>//<div>-->
 				<!--//<a href="signup.html" style="float:left">Registrarse</a>-->
 				<!--//</div>-->
-				<!--//<br>-->
+				<br>
 				<div>
 				<a href="cerrar_sesion.php" style="float:right">Cerrar sesión</a>
 				</div>
