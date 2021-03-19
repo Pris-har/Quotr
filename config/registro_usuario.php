@@ -35,6 +35,7 @@
             title: '¡OK!',
             text: 'CORREO INVALIDO',
             icon: 'success',
+			
         });
 		</script>";
 	}else{
