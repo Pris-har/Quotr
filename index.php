@@ -31,7 +31,7 @@
 				<button id="btn__iniciar-sesion">Iniciar sesión</button>
 			</div>
 			<div class="caja__trasera-register">
-				<h3>¿Aún no tienes cuenta? ---PRUEBA CAMBIO</h3>
+				<h3>¿Aún no tienes cuenta? ---??</h3>
 				<p>Regístrate para que puedas iniciar sesión</p>
 				<button id="btn__registrarse">Regístrarse</button>
 			</div>
