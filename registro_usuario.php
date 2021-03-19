@@ -32,11 +32,11 @@
 	$ejecutar = mysqli_query($con, $query);
 	
 	if($ejecutar){
-		echo "<script> swal({
+		echo '<script> swal({
             title: '¡OK!',
             text: 'CUENTA CREADA',
             icon: 'success',
-        });</script>";	
+        });</script>';	
 	}else{
 		echo '
 			<script>
