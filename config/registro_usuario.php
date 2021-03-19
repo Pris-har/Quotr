@@ -31,12 +31,12 @@
 	$ejecutar = mysqli_query($con, $query);
 	
 	if($ejecutar){
-		echo '
-			<script>
-				alert("Usuario almacenado exitosamente");
-				window.location = "../index.php";
-			</script>
-		';	
+		echo "<script> swal({
+            title: '¡OK!',
+            text: 'CORREO INVALIDO',
+            icon: 'success',
+        });
+		</script>";
 	}else{
 		echo '
 			<script>

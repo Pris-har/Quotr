@@ -1,3 +1,4 @@
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <?php
 	
 	include 'config/conexion.php';
@@ -31,12 +32,11 @@
 	$ejecutar = mysqli_query($con, $query);
 	
 	if($ejecutar){
-		echo '
-			<script>
-				alert("Usuario almacenado exitosamente");
-				window.location = "index.php";
-			</script>
-		';	
+		echo "<script> swal({
+            title: '¡OK!',
+            text: 'CUENTA CREADA',
+            icon: 'success',
+        });</script>";	
 	}else{
 		echo '
 			<script>
