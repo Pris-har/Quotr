@@ -6,10 +6,10 @@ $session_id= session_id();*/
 require_once ("../config/db.php");//Contiene las variables de configuracion para conectar a la base de datos
 require_once ("../config/conexion.php");//Contiene funcion que conecta a la base de datos
 
-$objeto = new Conexion();
+$objeto = new con();
 $conexion = $objeto->Conectar();
 
-$consulta = "SELECT id_producto, codigo_producto, nombre_producto, modelo_producto, id_departamento_producto. id_marca_producto, estatus_producto, unidad_medida_producto, peso_producto, precio_producto FROM productos";
+$consulta =  mysqli_query($con,"SELECT id_producto, codigo_producto, nombre_producto, modelo_producto, id_departamento_producto. id_marca_producto, estatus_producto, unidad_medida_producto, peso_producto, precio_producto FROM productos");
 $resultado = $conexion->prepare($consulta);
 $resultado->execute();
 $data=$resultado->fetchAll(PDO::FETCH_ASSOC);
