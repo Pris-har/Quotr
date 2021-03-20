@@ -13,7 +13,7 @@
   </head>
   <body>
     <?php require_once 'crud_process.php'; ?>
-
+    <div class="container">
     <?php 
         $mysqli = new mysqli('remotemysql.com', 'Pua9qGgCRT', 'WxdZ2hLjfr', 'Pua9qGgCRT') or die(mysqli_error($mysqli));
         $result = $mysqli->query("SELECT * FROM productos") or die($mysqli->error);
@@ -56,7 +56,7 @@
         <?php endwhile; ?>
         </table>
       </div>
-      
+
      <?php
        function pre_r($array){
           echo '<pre>';
@@ -109,7 +109,7 @@
         </div>
     </form>
     </div>             
-	
+    </div> 
   </body>
 </html>
 
