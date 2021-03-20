@@ -42,17 +42,17 @@
       <?php
        while ($row = $result->fetch_assoc()):?>
        <tr> 
-          <td><?php echo $row['codigo'];?></td>
-          <td><?php echo $row['nombre'];?></td>
-          <td><?php echo $row['modelo'];?></td>
-          <td><?php echo $row['id_departamento'];?></td>
-          <td><?php echo $row['id_marca'];?></td>
-          <td><?php echo $row['estatus'];?></td>
-          <td><?php echo $row['unidad_medida'];?></td>
-          <td><?php echo $row['peso'];?></td>
-          <td><?php echo $row['precio'];?></td>
+          <td><?php echo $row['codigo_producto'];?></td>
+          <td><?php echo $row['nombre_producto'];?></td>
+          <td><?php echo $row['modelo_producto'];?></td>
+          <td><?php echo $row['id_departamento_producto'];?></td>
+          <td><?php echo $row['id_marca_producto'];?></td>
+          <td><?php echo $row['estatus_producto'];?></td>
+          <td><?php echo $row['unidad_medida_producto'];?></td>
+          <td><?php echo $row['peso_producto'];?></td>
+          <td><?php echo $row['precio_producto'];?></td>
           <td>
-              <a href="crud2.php?edit=<?php echo $row['id_producto']; ?>"
+              <a href="crud2.php?editar=<?php echo $row['id_producto']; ?>"
                 class="btn btn-info"> Editar</a>
 
               <a href="crud_process.php?eliminar=<?php echo $row['id_producto']; ?>"
