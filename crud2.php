@@ -52,10 +52,10 @@
           <td><?php echo $row['peso'];?></td>
           <td><?php echo $row['precio'];?></td>
           <td>
-              <a href="crud2.php?edit=<?php echo $row['id_producto']; ?>">
+              <a href="crud2.php?edit=<?php echo $row['id_producto']; ?>"
                 class="btn btn-info"> Editar</a>
 
-              <a href="crud_process.php?delete=<?php echo $row['id_producto']; ?>">
+              <a href="crud_process.php?delete=<?php echo $row['id_producto']; ?>"
                 class="btn btn-danger"> Eliminar</a>
           
           </td>    
