@@ -12,19 +12,20 @@
 
   </head>
   <body>
+    <?php require_once 'crud_process.php'; ?>
     <div class="row justify-content-center">
-    <form action="" method="POST">
+    <form action="crud_process.php" method="POST">
         <div class="form-group">
         <label>Código:</label>
-        <input type="text" name="codigo" class="form-control" value="Código">
+        <input type="text" name="codigo" class="form-control" value="">
         </div>
         <div class="form-group">
         <label>Nombre:</label>
-        <input type="text" name="nombre" class="form-control" value="Nombre">
+        <input type="text" name="nombre" class="form-control" value="">
         </div>
         <div class="form-group">
         <label>Modelo:</label>
-        <input type="text" name="modelo" class="form-control" value="Modelo">
+        <input type="text" name="modelo" class="form-control" value="">
         </div>
         <div class="form-group">
         <label>ID de Departamento:</label>
@@ -40,18 +41,18 @@
         </div>
         <div class="form-group">
         <label>Unidad de Medida:</label>
-        <input type="text" name="unidad_medida" class="form-control" value="Unidad de Medida">
+        <input type="text" name="unidad_medida" class="form-control" value="">
         </div>
         <div class="form-group">
         <label>Peso:</label>
-        <input type="text" name="peso" class="form-control" value="Peso">
+        <input type="text" name="peso" class="form-control" value="">
         </div>
         <div class="form-group">
         <label>Precio:</label>
         <input type="number" name="precio" class="form-control" value="Precio">
         </div>
         <div class="form-group">
-        <button type="submit" name="guardar">Guardar</button>
+        <button type="submit" class="btn btn-primary" name="guardar">Guardar</button>
         </div>
     </form>
     </div>             
