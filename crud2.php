@@ -13,6 +13,42 @@
   </head>
   <body>
     <?php require_once 'crud_process.php'; ?>
+
+    <?php 
+        $mysqli = new mysqli('remotemysql.com', 'Pua9qGgCRT', 'WxdZ2hLjfr', 'Pua9qGgCRT') or die(mysqli_error($mysqli));
+        $result = $mysqli->query("SELECT * FROM productos") or die($mysqli->error);
+        //pre_r($result);
+        //pre_r($result->fetch_assoc());
+     ?>
+
+      <div class="row justify-content-center">
+        <table class="table">
+          <thead>
+            <tr>
+                <th>Código</th>
+                <th>Nombre</th>
+                <th>Modelo</th>
+                <th>ID del Departamento</th>
+                <th>Marca</th>
+                <th>Estatus</th>
+                <th>Unidad de Medida</th>
+                <th>Peso</th>
+                <th>Precio</th>
+                <th colspan="2">Acciones</th>
+            </tr>
+         </thead>
+        </table>
+      </div>
+
+     <?php
+       function pre_r($array){
+          echo '<pre>';
+          print_r($array);
+          echo '</pre>'
+
+       }
+     
+    ?>
     <div class="row justify-content-center">
     <form action="crud_process.php" method="POST">
         <div class="form-group">
