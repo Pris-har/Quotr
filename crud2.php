@@ -29,7 +29,7 @@
                 <th>Nombre</th>
                 <th>Modelo</th>
                 <th>ID del Departamento</th>
-                <th>Marca</th>
+                <th>ID de Marca</th>
                 <th>Estatus</th>
                 <th>Unidad de Medida</th>
                 <th>Peso</th>
@@ -37,14 +37,31 @@
                 <th colspan="2">Acciones</th>
             </tr>
          </thead>
+        
+
+      <?php
+       while ($row = $result->fetch_assoc()):?>
+       <tr> 
+          <td><?php echo $row['codigo'];?></td>
+          <td><?php echo $row['nombre'];?></td>
+          <td><?php echo $row['modelo'];?></td>
+          <td><?php echo $row['id_departamento'];?></td>
+          <td><?php echo $row['id_marca'];?></td>
+          <td><?php echo $row['estatus'];?></td>
+          <td><?php echo $row['unidad_medida'];?></td>
+          <td><?php echo $row['peso'];?></td>
+          <td><?php echo $row['precio'];?></td>
+          <td></td>    
+        </tr>
+        <?php endwhile; ?>
         </table>
       </div>
-
+      
      <?php
        function pre_r($array){
           echo '<pre>';
           print_r($array);
-          echo '</pre>'
+          echo '</pre>';
 
        }
      
