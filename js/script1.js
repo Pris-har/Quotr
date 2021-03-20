@@ -34,7 +34,7 @@ function keyIsValid (passw) {
 
 		console.log(e.target.value);
 		if(emailIsValid(e.target.value)){
-			emailLo.style.backgroundColor='#B6DEAC'; 
+			emailLo.style.backgroundColor='green'; 
 		}else{
 			emailLo.style.backgroundColor='Pink';
 		}
@@ -46,7 +46,7 @@ function keyIsValid (passw) {
   
 		  console.log(e.target.value);
 		  if(keyIsValid(e.target.value)){
-			passwrLo.style.backgroundColor='#B6DEAC'; 
+			passwrLo.style.backgroundColor='green'; 
 		  }else{
 			passwrLo.style.backgroundColor='Pink';
 		  }
@@ -59,7 +59,7 @@ function keyIsValid (passw) {
 
 	  console.log(e.target.value);
 	  if(emailIsValid(e.target.value)){
-		emailV.style.backgroundColor='#B6DEAC'; 
+		emailV.style.backgroundColor='green'; 
 	  }else{
 		emailV.style.backgroundColor='Pink';
 	  }
@@ -71,7 +71,7 @@ function keyIsValid (passw) {
 
 		console.log(e.target.value);
 		if(keyIsValid(e.target.value)){
-			passwr.style.backgroundColor='#B6DEAC'; 
+			passwr.style.backgroundColor='green'; 
 		}else{
 			passwr.style.backgroundColor='Pink';
 		}

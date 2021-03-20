@@ -53,7 +53,7 @@
 				<input type="text" placeholder="*Nombre(s)" name="nombres" required>
 				<input type="text" placeholder="*Apellido(s)" name="apellidos" required>
 				<input type="text" placeholder="*Empresa" name="empresa" required>
-				<input type="text" placeholder="*Example@domain.com" name="correo" class="email">
+				<input type="text" placeholder="*Correo Electrónico" name="correo" class="email">
 				<input type="password" placeholder="*Contraseña" name="contrasena" required  class="passw">
 				<button>Registrarse</button>
 			</form>
