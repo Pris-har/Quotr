@@ -12,28 +12,49 @@
 
   </head>
   <body>
+    <div class="row justify-content-center">
     <form action="" method="POST">
+        <div class="form-group">
         <label>Código:</label>
-        <input type="text" name="codigo" value="Código">
+        <input type="text" name="codigo" class="form-control" value="Código">
+        </div>
+        <div class="form-group">
         <label>Nombre:</label>
-        <input type="text" name="nombre" value="Nombre">
+        <input type="text" name="nombre" class="form-control" value="Nombre">
+        </div>
+        <div class="form-group">
         <label>Modelo:</label>
-        <input type="text" name="modelo" value="Modelo">
+        <input type="text" name="modelo" class="form-control" value="Modelo">
+        </div>
+        <div class="form-group">
         <label>ID de Departamento:</label>
-        <input type="number" name="id_departamento" value="ID de Departamento">
+        <input type="number" name="id_departamento" class="form-control" value="ID de Departamento">
+        </div>
+        <div class="form-group">
         <label>ID de Marca:</label>
-        <input type="number" name="id_marca" value="ID de Marca">
+        <input type="number" name="id_marca" class="form-control" value="ID de Marca">
+        </div>
+        <div class="form-group">
         <label>Estatus:</label>
-        <input type="number" name="estatus" value="Estatus">
+        <input type="number" name="estatus" class="form-control" value="Estatus">
+        </div>
+        <div class="form-group">
         <label>Unidad de Medida:</label>
-        <input type="text" name="unidad_medida" value="Unidad de Medida">
+        <input type="text" name="unidad_medida" class="form-control" value="Unidad de Medida">
+        </div>
+        <div class="form-group">
         <label>Peso:</label>
-        <input type="text" name="peso" value="Peso">
+        <input type="text" name="peso" class="form-control" value="Peso">
+        </div>
+        <div class="form-group">
         <label>Precio:</label>
-        <input type="number" name="precio" value="Precio">
-
+        <input type="number" name="precio" class="form-control" value="Precio">
+        </div>
+        <div class="form-group">
+        <button type="submit" name="guardar">Guardar</button>
+        </div>
     </form>
-                  
+    </div>             
 	
   </body>
 </html>
