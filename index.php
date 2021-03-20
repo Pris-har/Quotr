@@ -6,6 +6,8 @@
 		header("location: cotizador.php");
 		
 	}
+
+
 ?>
 
 
@@ -22,6 +24,7 @@
     
   </head>
   <body>
+	  
 	<main>
 	<div class="contenedor__todo">
 		<div class="caja__trasera">
@@ -40,8 +43,8 @@
 		<div class="contenedor__login-register">
 			<form action="config/login_usuario.php" method="POST" class="formulario__login">
 				<h2>Iniciar sesión</h2>
-				<input type="text" placeholder="Correo Electrónico" name="correo">
-				<input type="password" placeholder="Contraseña" name="contrasena">
+				<input type="text" placeholder="Correo Electrónico" name="correo" class="emailLog">
+				<input type="password" placeholder="Contraseña" name="contrasena" class="passwLog">
 				<button>Entrar</button>
 			</form>
 			
@@ -50,14 +53,14 @@
 				<input type="text" placeholder="*Nombre(s)" name="nombres" required>
 				<input type="text" placeholder="*Apellido(s)" name="apellidos" required>
 				<input type="text" placeholder="*Empresa" name="empresa" required>
-				<input type="text" placeholder="*Correo Electrónico" name="correo" required>
-				<input type="password" placeholder="*Contraseña" name="contrasena" required>
+				<input type="text" placeholder="*Correo Electrónico" name="correo" class="email">
+				<input type="password" placeholder="*Contraseña" name="contrasena" required  class="passw">
 				<button>Registrarse</button>
 			</form>
 		</div>
 	</div>
 	
 	</main>
-	<script src="js/script.js"> </script>
+	<script src="js/script1.js"></script>
   </body>
 </html>
