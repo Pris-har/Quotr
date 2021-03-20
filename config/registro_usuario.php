@@ -17,7 +17,7 @@
 	//VERIFICAR QUE EL CORREO NO SE REPITA EN LA BASE DE DATOS
 	
 	$verificar_correo = mysqli_query($con, "SELECT * FROM usuario WHERE correo='$correo' ");
-	
+
 	if(mysqli_num_rows($verificar_correo) > 0){
 		echo '
 			<script>
@@ -27,7 +27,25 @@
 		';
 		exit();
 	}
-	
+
+
+	if (!preg_match("/^[^\s@]+@[^\s@]+\.[^\s@]+$/", "$correo")){
+		echo '
+			<script>
+				alert("El correo debe cumplir con el formato");
+				window.location = "../index.php";
+			</script>
+		';
+	}
+
+	if (!preg_match("/^(?=.*[a-z])(?=.*[A-Z])(?=.{6,})/", "$contrasena")){
+		echo '
+			<script>
+				alert("La contraseña debe cumplir con el formato");
+				window.location = "../index.php";
+			</script>
+		';
+	}
 	$ejecutar = mysqli_query($con, $query);
 	
 	if($ejecutar){
