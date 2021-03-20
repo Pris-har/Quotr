@@ -24,4 +24,11 @@ if(isset($_POST['guardar'])){
 
 }
 
+if(isset($_GET['eliminar'])){
+	$id_producto = $_GET['eliminar'];
+	
+	$mysqli->query("DELETE FROM productos WHERE id_producto=$id_producto")or die($mysqli->error());
+
+}
+
 ?>
