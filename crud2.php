@@ -13,6 +13,20 @@
   </head>
   <body>
     <?php require_once 'crud_process.php'; ?>
+
+    <?php 
+    if (isset($_SESSION['message'])): ?>
+
+    <div class="alert alert-<?=$_SESSION['msg_type']?>">
+
+    <?php 
+      echo $_SESSION['message'];
+      unset($_SESSION['message']);
+    ?>
+    </div>
+
+    <?php endif ?>
+
     <div class="container">
     <?php 
         $mysqli = new mysqli('remotemysql.com', 'Pua9qGgCRT', 'WxdZ2hLjfr', 'Pua9qGgCRT') or die(mysqli_error($mysqli));
@@ -75,44 +89,64 @@
     ?>
     <div class="row justify-content-center">
     <form action="crud_process.php" method="POST">
+        <input type="hidden" name="id" value="<?php echo $id_producto; ?>">
         <div class="form-group">
         <label>Código:</label>
-        <input type="text" name="codigo" class="form-control" value="">
+        <input type="text" name="codigo" class="form-control" 
+        value="<?php echo $codigo; ?>" placeholder="Ingresa el código de tu producto">
         </div>
         <div class="form-group">
         <label>Nombre:</label>
-        <input type="text" name="nombre" class="form-control" value="">
+        <input type="text" name="nombre" class="form-control" 
+        value="<?php echo $nombre; ?>" placeholder="Ingresa el nombre de tu producto">
         </div>
         <div class="form-group">
         <label>Modelo:</label>
-        <input type="text" name="modelo" class="form-control" value="">
+        <input type="text" name="modelo" class="form-control" 
+        value="<?php echo $modelo; ?>" placeholder="Ingresa el modelo de tu producto">
         </div>
         <div class="form-group">
         <label>ID de Departamento:</label>
-        <input type="number" name="id_departamento" class="form-control" value="ID de Departamento">
+        <input type="number" name="id_departamento" class="form-control" 
+        value="<?php echo $id_departamento; ?>" placeholder="Ingresa el ID del departamento de tu producto">
         </div>
         <div class="form-group">
         <label>ID de Marca:</label>
-        <input type="number" name="id_marca" class="form-control" value="ID de Marca">
+        <input type="number" name="id_marca" class="form-control" 
+        value="<?php echo $id_marca; ?>" placeholder="Ingresa el ID de la marca de tu producto">
         </div>
         <div class="form-group">
         <label>Estatus:</label>
-        <input type="number" name="estatus" class="form-control" value="Estatus">
+        <input type="number" name="estatus" class="form-control" 
+        value="<?php echo $estatus; ?>" placeholder="Ingresa el estatus de tu producto">
         </div>
         <div class="form-group">
         <label>Unidad de Medida:</label>
-        <input type="text" name="unidad_medida" class="form-control" value="">
+        <input type="text" name="unidad_medida" class="form-control" 
+        value="<?php echo $unidad_medida; ?>" placeholder="Ingresa la unidad de medida de tu producto">
         </div>
         <div class="form-group">
         <label>Peso:</label>
-        <input type="text" name="peso" class="form-control" value="">
+        <input type="text" name="peso" class="form-control" 
+        value="<?php echo $peso; ?>" placeholder="Ingresa el peso de tu producto">
         </div>
         <div class="form-group">
         <label>Precio:</label>
-        <input type="number" name="precio" class="form-control" value="Precio">
+        <input type="number" name="precio" class="form-control" 
+        value="<?php echo $precio; ?>" placeholder="Ingresa el precio de tu producto">
         </div>
         <div class="form-group">
-        <button type="submit" class="btn btn-primary" name="guardar">Guardar</button>
+        <?php 
+        if ($update == true):
+        ?>
+          <button type="submit" class="btn btn-info" name="actualizar">Actualizar</button>
+        <?php 
+        else:
+        ?>
+          <button type="submit" class="btn btn-primary" name="guardar">Guardar</button>
+        <?php 
+        endif;
+        ?>
         </div>
     </form>
     </div>             
