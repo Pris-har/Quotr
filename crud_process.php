@@ -73,7 +73,7 @@ if(isset($_GET['editar'])){
 }
 
 if(isset($_POST['actualizar'])){
-	$id_producto = $_POST['actualizar'];
+	$id_producto = $_POST['id_producto'];
 	$codigo = $_POST['codigo'];
 	$nombre = $_POST['nombre'];
 	$modelo = $_POST['modelo'];
