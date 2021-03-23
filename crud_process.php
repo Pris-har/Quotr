@@ -69,6 +69,7 @@ if(isset($_GET['editar'])){
 
 	}
 	
+	header('location: crud2.php');
 	
 }
 
