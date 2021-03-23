@@ -69,7 +69,7 @@ if(isset($_GET['editar'])){
 
 	}
 	
-
+	header('location: crud2.php');
 }
 
 if(isset($_POST['actualizar'])){
