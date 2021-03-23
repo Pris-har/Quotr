@@ -89,7 +89,7 @@
     ?>
     <div class="row justify-content-center">
     <form action="crud_process.php" method="POST">
-        <input type="hidden" name="id_producto" value="<?php echo $id_producto; ?>">
+    <!---<input type="hidden" name="id_producto" value="<?php echo $id_producto; ?>">--->
         <div class="form-group">
         <label>Código:</label>
         <input type="text" name="codigo" class="form-control" 
@@ -139,7 +139,7 @@
         <?php 
         if ($update == true):
         ?>
-          <button type="submit" class="btn btn-info" name="actualizar">Actualizar</button>
+          <button type="submit" class="btn btn-info" name="actualizar" value="<?php echo $id_producto ?>">Actualizar</button>
         <?php else: ?>
           <button type="submit" class="btn btn-primary" name="guardar">Guardar</button>
         <?php endif; ?>

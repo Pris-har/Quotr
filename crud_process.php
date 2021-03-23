@@ -55,9 +55,10 @@ if(isset($_GET['editar'])){
 	$id_producto = $_GET['editar'];
 	$update = true;
 	$result = $mysqli->query("SELECT * FROM productos WHERE id_producto=$id_producto") or die($mysqli->error());
-	if ($result->num_rows){
-	//if (count($result)==1){
+	//if ($result->num_rows){
+	if (count($result)==1){
 		$row = $result->fetch_array();
+		$id_producto = $row['id_producto'];
 		$codigo = $row['codigo'];
 		$nombre = $row['nombre'];
 		$modelo = $row['modelo'];
