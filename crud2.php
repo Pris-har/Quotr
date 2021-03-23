@@ -66,7 +66,7 @@
           <td><?php echo $row['peso_producto'];?></td>
           <td><?php echo $row['precio_producto'];?></td>
           <td>
-              <a href="crud2.php?editar=<?php echo $row['id_producto']; ?>"
+              <a href="crud_process.php?editar=<?php echo $row['id_producto']; ?>"
                 class="btn btn-info"> Editar</a>
 
               <a href="crud_process.php?eliminar=<?php echo $row['id_producto']; ?>"
