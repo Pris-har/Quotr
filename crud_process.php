@@ -55,7 +55,8 @@ if(isset($_GET['editar'])){
 	$id_producto = $_GET['editar'];
 	$update = true;
 	$result = $mysqli->query("SELECT * FROM productos WHERE id_producto=$id_producto") or die($mysqli->error());
-	if (count($result)==1){
+	if ($result->num_rows){
+	//if (count($result)==1){
 		$row = $result->fetch_array();
 		$codigo = $row['codigo'];
 		$nombre = $row['nombre'];
@@ -69,7 +70,7 @@ if(isset($_GET['editar'])){
 
 	}
 	
-	header('location: crud2.php');
+	//header('location: crud2.php');
 	
 }
 
