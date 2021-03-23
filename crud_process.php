@@ -86,7 +86,7 @@ if(isset($_POST['actualizar'])){
 	
 	$mysqli->query("UPDATE productos SET id_producto='$id_producto', codigo='$codigo', nombre='$nombre',
 	modelo='$modelo', id_departamento='$id_departamento', id_marca='$id_marca', estatus='$estatus',
-	unidad_medida='$unidad_medida', peso='$peso', precio='$precio' WHERE id_producto=$id_producto") or die($mysqli->error());
+	unidad_medida='$unidad_medida', peso='$peso', precio='$precio' WHERE id_producto=$id_producto") or die($mysqli->error);
 
 	$_SESSION['message'] = "¡El producto se ha actualizado!";
 	$_SESSION['msg_type'] = "warning";
