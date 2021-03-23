@@ -69,11 +69,11 @@ if(isset($_GET['editar'])){
 
 	}
 	
-	header('location: crud2.php');
+	
 }
 
 if(isset($_POST['actualizar'])){
-	$id_producto = $_POST['id'];
+	$id_producto = $_POST['actualizar'];
 	$codigo = $_POST['codigo'];
 	$nombre = $_POST['nombre'];
 	$modelo = $_POST['modelo'];
@@ -91,6 +91,7 @@ if(isset($_POST['actualizar'])){
 	$_SESSION['message'] = "¡El producto se ha actualizado!";
 	$_SESSION['msg_type'] = "warning";
 
+	header('location: crud2.php');
 }
 
 ?>
