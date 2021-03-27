@@ -28,17 +28,17 @@ $people = $statement->fetchAll(PDO::FETCH_OBJ);
         <?php foreach($productos as $n_producto): ?>
           <tr>
             <td><?= $n_producto->codigo_producto; ?></td>
-            <td><?= $person->nombre_producto; ?></td>
-            <td><?= $person->modelo_producto; ?></td>
-            <td><?= $person->id_departamento_producto; ?></td>
-            <td><?= $person->id_marca_producto; ?></td>
-            <td><?= $person->estatus_producto; ?></td>
-            <td><?= $person->unidad_medida_producto; ?></td>
-            <td><?= $person->peso_producto; ?></td>
-            <td><?= $person->precio_producto; ?></td>
+            <td><?= $n_producto->nombre_producto; ?></td>
+            <td><?= $n_producto->modelo_producto; ?></td>
+            <td><?= $n_producto->id_departamento_producto; ?></td>
+            <td><?= $n_producto->id_marca_producto; ?></td>
+            <td><?= $n_producto->estatus_producto; ?></td>
+            <td><?= $n_producto->unidad_medida_producto; ?></td>
+            <td><?= $n_producto->peso_producto; ?></td>
+            <td><?= $n_producto->precio_producto; ?></td>
             <td>
-              <a href="editar.php?id=<?= $n_producto->id_producto ?>" class="btn btn-info">Editar</a>
-              <a onclick="return confirm('¿Seguro que quieres eliminar este registro?')" href="borrar.php?id=<?= $n_producto->id_producto ?>" class='btn btn-danger'>Borrar</a>
+              <a href="editar.php?id_producto=<?= $n_producto->id_producto ?>" class="btn btn-info">Editar</a>
+              <a onclick="return confirm('¿Seguro que quieres eliminar este registro?')" href="borrar.php?id_producti=<?= $n_producto->id_producto ?>" class='btn btn-danger'>Borrar</a>
             </td>
           </tr>
         <?php endforeach; ?>
